@@ -46,7 +46,6 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Jin Wook Shin</h1>
-            <p class="section__text__p2">Computer Engineer</p>
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
@@ -60,10 +59,10 @@
             <div id="socials-container">
                 <img 
                     src="./assets/linkedin.png" alt="My LinkedIn profile"
-                    class="icon" onclick="location.href='https://www.linkedin.com/in/jinwook-shin/'">
+                    class="icon" onclick=" window.open('https://www.linkedin.com/in/jinwook-shin/','_blank')">
                     <img 
                     src="./assets/github.png" alt="My Github profile"
-                    class="icon" onclick="location.href='https://github.com/jinw06k'">
+                    class="icon" onclick=" window.open('https://github.com/jinw06k','_blank')">
             </div>
         </div>
     </section>
@@ -231,7 +230,7 @@
             class="icon arrow"
             onclick="location.href='./#projects'"/>
     </section>
-    <section id="projects">
+    <section id="projects" class="project-section">
         <p class="section__text__p1">Browse My</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
@@ -300,6 +299,38 @@
                     onclick=" window.open('http://youtube.com','_blank')"">Live Demo</button>
                 </div>
             </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-5.png"
+                        alt="Project 5"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Five</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-3 project-btn"
+                    onclick=" window.open('http://github.com','_blank')">Github</button>
+                    <button class="btn btn-color-4 project-btn"
+                    onclick=" window.open('http://youtube.com','_blank')"">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-6.png"
+                        alt="Project 6"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Six</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-3 project-btn"
+                    onclick=" window.open('http://github.com','_blank')">Github</button>
+                    <button class="btn btn-color-4 project-btn"
+                    onclick=" window.open('http://youtube.com','_blank')"">Live Demo</button>
+                </div>
+            </div>
         </div>
         </div>
         <img src="./assets/arrow.png"
@@ -307,7 +338,7 @@
             class="icon arrow"
             onclick="location.href='./#contact'"/>
     </section>
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -315,12 +346,33 @@
                 <img
                     src="./assets/email.png"
                     alt="Email icon"
-                    class="icon contact-icon"
+                    class="icon contact-icon email-icon"
                 />
                 <p><a href="mailto:jinuk1024@gmail.com">jinuk1024@gmail.com</a></p>
             </div>
+            <div class="contact-info-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                />
+                <p><a onclick=" window.open('https://www.linkedin.com/in/jinwook-shin/','_blank')">LinkedIn</a></p>
+            </div>
         </div>
     </section>
+    <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Jin Wook Shin. All Rights Reserved</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
