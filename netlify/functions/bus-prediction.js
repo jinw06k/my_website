@@ -8,7 +8,6 @@ dotenv.config();
 
 const apiKey = process.env.API_KEY;
 
-// Function to fetch data from the API
 async function getData(apiKey, base, params = {}) {
   const baseUrl = `http://mbus.ltp.umich.edu/bustime/api/v3/${base}?key=${apiKey}&format=json`;
   const urlParams = new URLSearchParams(params).toString();
@@ -24,7 +23,7 @@ async function getData(apiKey, base, params = {}) {
 }
 
 //export const handler = async () => {
-// Main handler function for the serverless function
+// serverless function handler
 export const handler = async (event, context) => {
   const base = 'getpredictions';
   const northboundFromCctc = [
