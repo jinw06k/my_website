@@ -5,14 +5,8 @@
       href="https://fonts.googleapis.com/css?family=Nunito Sans"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='style.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='mediaqueries.css') }}"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus Predictions</title>
@@ -151,7 +145,7 @@
         loader.style.display = "inline-block";
 
         try {
-          const response = await fetch("http://127.0.0.1:5000/bus-prediction");
+          const response = await fetch("http://localhost:3000/bus-prediction"); // Updated URL to match Node.js server
           const data = await response.json();
           const container = document.getElementById("predictions-container");
           container.innerHTML = "";
