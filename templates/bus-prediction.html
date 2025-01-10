@@ -145,7 +145,7 @@
         loader.style.display = "inline-block";
 
         try {
-          const response = await fetch("http://localhost:3000/bus-prediction"); // Updated URL to match Node.js server
+          const response = await fetch("/.netlify/functions/bus-prediction");
           const data = await response.json();
           const container = document.getElementById("predictions-container");
           container.innerHTML = "";
