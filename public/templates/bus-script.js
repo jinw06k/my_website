@@ -26,7 +26,7 @@ async function fetchPredictions(routeId) {
   container.innerHTML = `<p>Loading predictions for route ${routeId}...</p>`;
 
   try {
-    const response = await fetch("/.netlify/functions/bus-prediction?route_id=${routeId}");
+    const response = await fetch(`/.netlify/functions/bus-prediction?route_id=${routeId}`);
     const data = await response.json();
     container.innerHTML = "";
 
