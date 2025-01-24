@@ -12,7 +12,6 @@ body {
     font-optical-sizing: auto;
     /*font-weight: <weight>;*/
     font-style: normal;
-    margin-top: 60px;
 }
 
 html {
@@ -51,7 +50,7 @@ nav {
     top: 0;
     left: 0; 
     width: 100%;
-    height: 60px;
+    height: 10vh;
     z-index: 1000; 
     background-color: #fff; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -193,6 +192,7 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    margin-top: 10vh;
 }
 
 .section__pic-container {
@@ -335,6 +335,7 @@ section {
 
 #experience {
     position: relative;
+    margin-top: 10vh;
 }
 
 .experience-sub-title {
@@ -389,6 +390,7 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-top: 10vh;
 }
 
 .color-container {
@@ -432,6 +434,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 10vh;
 }
 
 .contact-info-upper-container {
