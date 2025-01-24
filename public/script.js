@@ -7,13 +7,12 @@ function toggleMenu(){
 
 const texts = [
     "Jin Wook Shin",
-    "2nd year in Computer Engineering",
-    "Taking EECS 216,373,445",
-    "VP of KISA",
-    "Listening to J-POP",
+    "2nd Year in\nComputer Engineering",
+    "taking\nEECS 216, 373, 442",
     "EECS 545 Grader",
-    "Into rock-climbing",
-    "Self-studying LLM",
+    "VP of KISA",
+    "into rock-climbing",
+    "self-studying LLM",
 ];
 
 let currentIndex = 0;
